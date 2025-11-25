@@ -75,7 +75,7 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://clevera.mintlify.app/",
           "icon": "book-open-cover"
         },
         {
@@ -100,7 +100,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.clevera.ai"
     }
   },
   "contextual": {
