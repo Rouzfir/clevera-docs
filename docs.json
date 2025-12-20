@@ -25,11 +25,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://clevera.mintlify.app/",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Blog",
           "href": "https://www.clevera.ai/blog",
           "icon": "newspaper"
