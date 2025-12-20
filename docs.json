@@ -23,7 +23,14 @@
             {
         "group": "Product updates",
         "pages": [
-          "changelog"        ]
+          "changelog"        
+        ]
+      },
+      {
+        "group": "Video",
+        "pages": [
+          "elevenlabs"        
+        ]
       }
     ],
     "global": {
