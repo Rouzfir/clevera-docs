@@ -24,11 +24,6 @@
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Blog",
-          "href": "https://www.clevera.ai/blog",
-          "icon": "newspaper"
-        }
       ]
     }
   },
