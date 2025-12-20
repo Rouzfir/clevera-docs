@@ -1,80 +1,162 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Creating your first video"
+description: "To start your first video, you should first record your screen using Clevera recorder app. There are two ways to open the app:"
 ---
 
-## Get started in three steps
+## Open Clevera app
 
-Get your documentation site running locally and make your first customization.
+**Method 1:** from the web app
 
-### Step 1: Set up your local environment
+1. Go to [<u>app.clevera.ai</u>](http://app.clevera.ai) and click New Video.
+2. Go to "My Videos" page and click on the "New Video" button on the top right corner
+
+![Screenshot2025 12 20at00 09 23](/images/Screenshot2025-12-20at00.09.23.png)
+
+**Method 2:** From the Mac menu bar or Windows system tray.
+
+1. Click the Clevera icon in your Mac menu bar or Windows system tray.
+2. Choose New Recording to start a session.
+
+<Columns cols={2}>
+  <Card title="Mac">
+    ![S1](/images/s1.jpg)
+  </Card>
+  <Card title="Windows">
+    ![S22](/images/s22.jpg)
+  </Card>
+</Columns>
+
+## Choose what to record
+
+Once you open the Clevera recorder app, you'll have the option to pick your capture target:
+
+- **Entire Screen**\
+  Records everything on your display. Best for multi-window workflows or when switching apps.
+- **Single Application**\
+  Captures only one app/window. For example, if you're recording a something on your browser, you can capture only the browser window.
+
+<img
+  src="/images/Screenshot2025-12-20at00.30.44.png"
+  alt="Screenshot2025 12 20at00 30 44"
+  title="Screenshot2025 12 20at00 30 44"
+  className="mx-auto"
+  style={{ width:"62%" }}
+/>
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion title="Microphone On/Off" icon="microphone" iconType="regular">
+    Turn it on if you want to speak while recording (for extra context). Turn it off if you don't want to provide extra context. Clevera can still write and narrate the whole thing.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion title="Countdown Timer" icon="timer">
+    Set how many seconds to wait before recording starts. From the macOS app, go to Settings -\> Recording -\> Countdown Timer. Your preview updates automatically as you edit files.
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+Press **Start Recording** when you’re ready.
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+## Tips for while you're recording
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+When you’re recording, keep these tips in mind for better results:
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+- Move the mouse smoothly, avoid fast jumpy moves.
+- Pause briefly after each action (e.g. click a button). That micro-pause gives Clevera processing time and helps Clevera detect action boundaries.
+- If you talk while recording:
+  - **Stop moving the mouse** while you’re speaking, then continue your actions.
+  - Your speech is **not used in the final video**, it’s just context to enrich the script.
+  - Synthetic narration will be generated later in your selected voice.
+- Don’t circle the mouse to highlight things. You can add highlights or zooms cleanly in the editor later.
+- Keep it short. Aim for ≤ 5 minutes per recording. For big topics, **split them** into smaller videos.
+- Minor mistake? Keep rolling. You can edit out some mistakes later in the editor.
 
-### Step 3: Go live
+## Finish the recording
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+Click **Complete Recording** from the macOS or Windows app.
 
-## Next steps
+<img
+  src="/images/fd2.jpg"
+  alt="Fd2"
+  title="Fd2"
+  className="mx-auto"
+  style={{ width:"100%" }}
+/>
 
-Now that you have your docs running, explore these key features:
+#### **Generation settings**
+
+You’ll land on a setup page where you can tell Clevera how to build your video.
+
+<img
+  src="/images/image.png"
+  alt="Image"
+  title="Image"
+  className="mx-auto"
+  style={{ width:"46%" }}
+/>
+
+Pick your desired settings and hit \*\*Generate. \*\*
+
+## Editing voiceovers (the fast fun part)
+
+When your video is ready, it will open in the editor. From the right sidebar find all the voiceovers by event.
+
+<img
+  src="/images/n11.jpg"
+  alt="N11"
+  title="N11"
+  className="mx-auto"
+  style={{ width:"100%" }}
+/>
+
+### Remove an event
+
+To remove a part of video including any voiceover associated with it, select the event from the timeline panel on the right to open its options. Click the event to reveal the action buttons, then choose setting icon on top of the item. From there disable **Timeline visibility** if enabled. The event and its voiceover will be removed from timeline.
+
+<img
+  src="/images/n12.jpg"
+  alt="N12"
+  title="N12"
+  className="mx-auto"
+  style={{ width:"100%" }}
+/>
+
+### Edit a voiceover
+
+To edit a voiceover line, select it in the right sidebar to reveal its actions. You can edit the text manually by clicking the \*\*edit icon \*\*and typing your changes, or regenerate it with AI to rewrite the line automatically while keeping the timing and context intact.
+
+![N13](/images/n13.jpg)
+
+### Mute a voiceover
+
+To mute a voiceover, select the voiceover line in the timeline and toggle mute icon. The animation and on screen actions will still play, but no narration will be heard during that segment.
+
+![N14](/images/n14.jpg)
+
+### Revise the entire voiceovers
+
+Use **Improve Voiceovers** to revise all voiceover lines at once with AI. Enter a prompt describing how you want the narration to change, such as tone or clarity, and Clevera rewrites the entire voiceover while keeping the timing and structure aligned with the video.
+
+![N15](/images/n15.jpg)
+
+## Sharing & exporting
+
+Once you're happy with your video, you can share it with public. Clevera supports multiple methods to share your video.
+
+- **View-only link:** Share a URL with customers or teammates.
+- **Embed:** Place the video on docs, help centers, your website, Notion, Jira or anywhere that supports HTML/iframe.
+- **Publish directly to your tools: **Connect Clevera with your favorite tool and publish it directly on that platform. 
+- **MP4: **Exporting to MP4 lets you download a final video file that can be shared anywhere, uploaded to other platforms, or stored offline, independent of the live embedded version.
+
+<img
+  src="/images/Screenshot2025-12-20at08.51.21.png"
+  alt="Screenshot2025 12 20at08 51 21"
+  title="Screenshot2025 12 20at08 51 21"
+  className="mx-auto"
+  style={{ width:"72%" }}
+/>
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  
 </CardGroup>
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Need more help?** [Contact our support](mailto:team@clevera.ai).
 </Note>
