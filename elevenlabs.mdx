@@ -1,0 +1,133 @@
+---
+title: "ElevenLabs Voice Integration"
+---
+
+> **TL;DR:** To integrate ElevenLabs into Clevera, first generate an API key in **ElevenLabs Developers \> API Keys **with Text-to-Speech access and Read permissions for Voices, Models, and User data; then paste and save this key in Clevera's **Account Settings \> ElevenLabs API Key section**, and finally select ElevenLabs as the voice engine when regenerating a video's voiceover.
+
+## Enhance Your Clevera Videos with ElevenLabs Custom Voices
+
+This tutorial shows how to connect ElevenLabs to Clevera: create an API key with the right permissions, add it to your workspace, then pick an ElevenLabs voice to regenerate voiceovers.
+
+## Part 1: Generating Your ElevenLabs API Key with Necessary Permissions
+
+To connect Clevera with ElevenLabs, you first need to create a dedicated API key in your ElevenLabs account. This key acts as a secure credential, allowing Clevera to access ElevenLabs' voice generation services on your behalf. It's crucial to set the correct permissions to ensure smooth functionality while maintaining the security of your ElevenLabs account.
+
+### Step 1: Navigate to the ElevenLabs Developers Panel
+
+Begin by logging into your ElevenLabs account. Once on the main dashboard, you'll see a left-hand navigation menu with various categories.
+
+Scroll down the left navigation bar until you locate the **Developers** section, typically found towards the bottom under the "Products" and "Productions" categories. Click on **Developers**.
+
+![ElevenLabs dashboard with the 'Developers' link highlighted in the left navigation](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-2-fb7ba766-d302-436c-8593-e8fb95b54ad5.jpg?Expires=1797683570&Signature=VjSGFoIgmvLz2DO09t0j39bTZEnByoUZHJxkLaX3gkjJ71wDYc9Cr9apmi3dOEa6WlNDpkc0de7~lKLywE18Z2mxK2PHoDdgdAVcaFb5FWVHyLkCYdXS6ucOzo3dKm9S3tiXAVUtYyVwcjMNQ5lqsHrYR7XsWFAkxjfQGtjh8976XG1m~QsTxiUnl0crl6src9ACOKnSB8S~oZsP5mwM1DqvfYmXPlAzaRGsKy8w3lgWh-F8ExKF7QONqkj5pXf6Fux5kBpm6bsDdqsE8HYcXU~oqtbtqZJ2MQ2~hCudn66RWaCa7bMCOnuSE88X2PiKeBAg7uq1CEAQZBJ68qgEaw__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+### Step 2: Access the API Keys Management Section
+
+Click the **API Keys** tab to view and manage your existing API keys.
+
+![ElevenLabs Developers page with the 'API Keys' tab highlighted](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-5-46cbeb62-1075-4ded-9453-efedf2231e15.jpg?Expires=1797683570&Signature=KWidw9diBlOK3Jy1E6UMifxjNU5k23isThca~dgrbkfax0fSuXHCuj2qYRcfbg88i-QPy-lJHP9zljqncUpjX8ZphQZ0YAeUu3HY4PyYF39T6b8yHZC0FgQOo1Wuo4gAPWBcxllh~d52FDz6EOaeUqMQ7f4aJAXclL~Glbfas0Gs59wM8c7XOY2obJdxXxdTnIMlLupH97uVJDcpNBM4Wxbi-FqNUMDsz6VtqOQy9NPhgZ5s5rpkXjmIyBf6MU~TiGRqECJw4912glbr-tAECPpX6GSqCrPlf5xuYAAXdQPV2MUxuXHYZLvkymsV~bWrIwwNvw1LHmvaAUhbiSH0XQ__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+### Step 3: Initiate the API Key Creation Process
+
+To create a new API key for Clevera, click the **\+ Create Key** button.
+
+![User API Keys panel with the '+ Create Key' button highlighted](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-7-6ec2066d-e9c4-48b9-ab4f-9f8ac8dc2944.jpg?Expires=1797683570&Signature=hHs0VqDD4DpxDGA3R2bZQE14fs~6hMv838xhEaFL3JKyqmT220SewUVvgcw3zW9apCzpGbqDFOH16EQbGfy3KKhv4bRSO5nev7wVl~G7RTE7kYVLWotNdwbCVFiHNJSPl7GWY-LQIjwWPr9IgwPuQ1qnVPJf5nIUXI1aunT~0-q~b88n4Vq3y1QT0R9RYTrrpD3zR~7WcRQd0V9z5yMMBpn919qh9WUsgEBvBcFbagsxCaaLlrjfR3WKsinoJNvRw6bfCimQZOomuSHa74UNw5-g5XA64db7j9YYw9MlObW7lT17-OO1IOgmyOWuOgG1ok3lOgKIaTh3ZrZQGoSmCQ__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+### Step 4: Configure API Key Permissions for Clevera
+
+Clevera requires specific permissions to properly integrate with ElevenLabs. These include access to Text-to-Speech and Read permissions for Voices, Models, and User data.
+
+#### 4.1: Enable Text-to-Speech Access
+
+Under the "Endpoints" section, locate **Text-to-Speech**.
+
+To enable text-to-speech functionality for Clevera, click the **Access** button next to **Text-to-Speech**. The button will change from "No Access" to "Access," indicating it's enabled.
+
+<Note>
+  Enabling Text-to-Speech is essential for Clevera to generate audio from your video scripts using ElevenLabs. Without this, Clevera will not be able to create voiceovers.
+</Note>
+
+#### 4.2: Grant Read Permissions for Voices, Models, and User Data
+
+Scroll down the "Create API Key" sidebar to find the **Voices**, **Models**, and **User** categories. 
+
+- For **Voices**, click **Read**. This allows Clevera to list and select available ElevenLabs voices.
+- For **Models**, click **Read**. This allows Clevera to identify and use ElevenLabs' underlying voice models.
+- For **User**, click **Read**. This allows Clevera to verify your ElevenLabs account details and remaining character credits.
+
+![API Key creation sidebar showing 'Read' permissions granted for Voices, Models, and User](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-19-54c350af-73b0-44c8-b2f0-03995066971e.jpg?Expires=1797683570&Signature=hfj9cM5FGRur3tPNerjXpn9np7HJmH4EILQKBFw7GSEBCeriTKqhCpYAmfEJCPPT6nIGGrOreZkd~Rbgqc2ohxJZXyfB6vW0vQwMH9k46mUgojBuxW2B1yjaq6R3VOkxL9zY~qYpziB554-ABJqGFAT7a6G2nmAZAudQ4dk~lkMnDulwADC54CYL7OUzwBBU~jBlJqxbnN4PK7NYGv8jgvYWesci6V5OEq0Wme4waA96Tr221jJWcQO2ss40YIeAj43Ovh7v1cUIxIbWpLMxWreA0tomB0lRYT444tUIcO7d6QQILktHHldX6YBAtrqiasDlx1DPftzZSjFPaGMBIg__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+<Warning>
+  Granting "Write" access or excessive permissions beyond what Clevera needs can pose a security risk. Always follow the principle of least privilege by only granting the necessary permissions.
+</Warning>
+
+### Step 5: Create and Copy Your New API Key
+
+After configuring all the necessary permissions, scroll to the bottom of the "Create API Key" sidebar.
+
+Click the **Create Key** button.
+
+The API key is presented as a long string of characters within a text field. Below it, you'll see two buttons: **Close** and **Copy to Clipboard**.
+
+Click the **Copy to Clipboard** button to copy the entire API key to your system clipboard.
+
+![API Key display modal with the 'Copy to Clipboard' button highlighted](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-23-b6a243f7-539d-47df-b8a7-ada4e3109767.jpg?Expires=1797683570&Signature=W57-f-HU91UEHG2rZEQPDprJbMVN4P9X3RxtZBbOZyCK~F2Qv0lbxwNfvoKlwKX2nyIAgF1R1pPc4WZGH8xmwQkHhqK~2ZZwjZ0IPyzqLdmd974csrn6DnZkl-c6mZTuj-7R4crhzWg2HXZxlXmzQC~88YplMTwx1RMdZwfy7poh-7hPAJAQQA1YG5ECKBkhzx1fkoTq0GYTHSAvaJdH6F3LsOFSMxcmmHxTJHD4mZSwUiflGNEQlE16iTHoIMdoydLa-OUCgFt~~DLXaPiuLJ3J2qJMwFl305fYdf7VH-~hA9Jq2KmKNS3Q2aRpLlA~bTchJKfmTAoD8ogM7a7FPg__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+<Tip>
+  Best practice: Once copied, immediately paste your API key into a secure location or directly into Clevera. For security reasons, this key will not be displayed again after you close this modal. If you lose it, you'll need to generate a new one.
+</Tip>
+
+## Part 2: Linking ElevenLabs to Clevera and Regenerating Voiceovers
+
+With your ElevenLabs API key successfully generated and copied, the next step is to integrate it into your Clevera workspace. This connection will allow you to leverage ElevenLabs' advanced voice technology directly within your video projects.
+
+### Step 1: Navigate to Clevera Account Settings
+
+Switch to your Clevera application tab in your browser.
+
+In the top-left corner of the Clevera dashboard, you'll see your current workspace name (e.g., "Antbees") next to a dropdown arrow. Click this dropdown arrow to open the workspace menu.
+
+![Clevera dashboard with the workspace name dropdown highlighted](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-28-485e12cf-166b-47b7-b442-0c7bab39a2f7.jpg?Expires=1797683570&Signature=f8DfX7wpGcwfOG85EYWVVDBAiDg4yJ0Q7I4w0oty0YgUuNI2Izx1U-G6dyVzmqaPZcIywIwpJY-xoHpOAGMSurdytze4f~P15uqj5slK-H7wY562s3hVCSaXgZBXRkRHpSzY1EdrOvSD7PpWaRsJ-hSZrqMrYzTPZ40mTTlTi60UIaoZbKfPXnTtyyFN10lgFjSp9d5bbukgl6Zxu9ZItponLLV0IqVtF-yxL5MlIjOxqXGtGbclNFuSm2W1WC21GSxduJys6qEpAJyD--q0qJQVbjcALNU9W~CUqtP1hKeOpW7rWoux2t3HNHMpJNoRchY-8XjyyrbR5toYXrzKtw__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+Click **Account Settings**.
+
+The Account Settings page will load, displaying various personal information, password security, and integration settings. Scroll down the page to find the **ElevenLabs API Key** section.
+
+### Step 2: Paste the ElevenLabs API Key
+
+Right-click inside the **API Key** input field and select **Paste** from the context menu to insert the ElevenLabs API key you copied earlier.
+
+![API Key input field in Clevera after pasting the new key](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-45-396c6267-13cd-4b2d-851b-bd895cfc7bc6.jpg?Expires=1797683570&Signature=AvMqJAl1wsyi-kzpqkTSuXMH~sRQQNCis~5hPeGv0K26pHdwtbw~FTWewnMhLX3oWRORbe0ytcqbX2p4rBPZfAM0KVvgSCh167UFL9yNnAfwxWA82j~-YEUQO3hWqctob1l0pBcLr3v4lvOqaacOGWTpRd5FBN3XNrcsM71HjqPFKGzKj3bRFoi6AQbHVglMG7sUn7T6GameYdtHyvUX~Ct4gV4eEEHBDlFK~0i8cL-a1jEe-h~LlAmAuFBAtzYhNUdSGJfAiUlukzgt3U8cUELsZR25rImjbhiCbysdmM7ps2JlckxHm0TSF5E6yLDi41nk6O0PleKMeU~fiovMIg__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+After pasting the key, click the **Save Key** button.
+
+<Check>
+  Clevera stores your ElevenLabs API key securely and encrypted, and it will not be shared with anyone in your team.
+</Check>
+
+### Step 3: Select a Video for Voiceover Regeneration
+
+Now that ElevenLabs is integrated, you can use its voices in your video projects.
+
+On the left-hand navigation panel, click **My Videos**.
+
+The "My Videos" page displays a grid of all your video projects. Locate the video you wish to regenerate the voiceover for. In the video, a video titled "How to Automatically Add Google Meet Links To Your Google Calendar Booking Pages" is selected.
+
+Click on the desired video thumbnail to open it in the Clevera video editor.
+
+### Step 4: Choose ElevenLabs as the Voice Engine and Select a Voice
+
+Now whenever you generate a video, locate the **Voice Engine** section. You'll see several options: **Google**, **OpenAI**, and **ElevenLabs**.
+
+Click **ElevenLabs**. 
+
+![Regenerate Video modal with 'ElevenLabs' selected as the Voice Engine](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-63-74f57293-173b-4539-9775-c595e6bc41ba.jpg?Expires=1797683571&Signature=MHmMLi62wIsHVGGZ1-RuL14Y9G684M4CadjqH~4luVxbhgK7uyK~mI17e7Qu1Gy8gLygCl7fcW7Rw07S7yDNGuRotTtNt8MHc3XgZSaBvHVJV-88u9TNYuA0peCnfy1mSfvBp1Usf-cdtnFL64OUAAsjDFlFF7eMtwwAkvnlbXbDwr-XiUAl~jvMufHZKkT2DOCwGhhr6n-pkDuXYmmqIMx5UTUf-15Y5obDB9hfYcMzABYjpt2AgUOXQQB4va~rphuUj0eF-eT1mnJ04eXUtC4m-DFr30LoyO1zu9BMEruNsML625-UfqlhtU0OtxhgqCmK4JVLe8sya~nn9T0pRg__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+Once **ElevenLabs** is selected, a **Voice** dropdown menu will appear below it.
+
+The voice picker displays a list of available ElevenLabs voices, often categorized by gender and accent. 
+
+Here you'll find your voice listed.
+
+![Voice picker showing 'Roozbeh' selected](https://d14xczjzvlshjn.cloudfront.net/screencasts/scrcst_mhnmphe7tjbkham2/processed/article_images/article-article_vfqszfxtpjiwc5tn-69-711484f3-4a0a-4bce-9646-ce9eb5a01777.jpg?Expires=1797683571&Signature=idUTI8UtrpOEDuih9dU2pN74oGcZ~XWZnn5VuoFfNE9IofEMj6sVCWmyD8WiFuGkjLWrB86Mz82hrS4fdvKQYwQD2D~cBx2EQQSdR8qrrQ7T721M2RXPjvKxX4~XPawYbaMIS5KXFvzJeBXMggBq3N425o1Jaj7TGMf5PHT5wtsT0zqebfvvocie0jzwLF77ZaBr3JviN0E8eemdgzLM2shz0HHwgp0~RRK2I8GfkZ-Mjn5biJIoQkFX3DYH~izcr-F1RT3OU~gW-0ZyYOs5PIrDjnH-XGl2K2Rit3g~fuVwvCWwQOcS1M49GcCVASEGKOLKy9tfop43IKTIPkZw-g__&Key-Pair-Id=APKA26BID7YIZU7LYRQT)
+
+The video concludes here, but in a real-world scenario, you would scroll down and click the **Regenerate Video** button at the bottom of the modal to start the regeneration process with your chosen ElevenLabs voice.
