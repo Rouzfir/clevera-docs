@@ -26,7 +26,13 @@
           "elevenlabs"        
         ]
       },
-            {
+      {
+        "group": "Integrations",
+        "pages": [
+          "notion"        
+        ]
+      },
+      {
         "group": "Product updates",
         "pages": [
           "changelog"        
