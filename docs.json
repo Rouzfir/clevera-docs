@@ -17,9 +17,13 @@
         "group": "Getting started",
         "pages": [
           "index",
-          "quickstart",
-          "changelog"
+          "quickstart"
         ]
+      },
+            {
+        "group": "Product updates",
+        "pages": [
+          "changelog"        ]
       }
     ],
     "global": {
