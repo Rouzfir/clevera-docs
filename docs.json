@@ -20,16 +20,16 @@
           "quickstart"
         ]
       },
-            {
-        "group": "Product updates",
-        "pages": [
-          "changelog"        
-        ]
-      },
       {
         "group": "Video",
         "pages": [
           "elevenlabs"        
+        ]
+      },
+            {
+        "group": "Product updates",
+        "pages": [
+          "changelog"        
         ]
       }
     ],
