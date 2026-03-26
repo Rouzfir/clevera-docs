@@ -23,26 +23,22 @@
       {
         "group": "Video",
         "pages": [
-          "elevenlabs"        
+          "elevenlabs"
         ]
       },
       {
         "group": "Integrations",
         "pages": [
-          "notion"        
+          "notion"
         ]
       },
       {
         "group": "Product updates",
         "pages": [
-          "changelog"        
+          "changelog"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
