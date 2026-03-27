@@ -23,7 +23,8 @@
       {
         "group": "Video",
         "pages": [
-          "elevenlabs"
+          "elevenlabs",
+          "video-cover"
         ]
       },
       {
