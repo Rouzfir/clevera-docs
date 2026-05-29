@@ -50,6 +50,10 @@
       {
         "label": "Support",
         "href": "mailto:team@clevera.ai"
+      },
+      {
+        "href": "https://app.clevera.ai/",
+        "label": "Go to app"
       }
     ],
     "primary": {
