@@ -54,7 +54,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Go to App",
       "href": "https://app.clevera.ai"
     }
   },
