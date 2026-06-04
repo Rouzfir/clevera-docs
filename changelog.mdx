@@ -1,24 +1,42 @@
 ---
 title: "Changelog"
-description: "Track what is new, improved, and fixed in Clevera so you can quickly see how the product evolves over time and what has changed since your last visit.
-"
+description: "Track what is new, improved, and fixed in Clevera so you can quickly see how the product evolves over time and what has changed since your last visit. "
 ---
 
 <Update label="06/04/2026">
-    ## Scene editor improvements
-  We refreshed the scene editor, including transitions, title cards, logo reveals, and the insert menu, to make editing feel smoother and easier to navigate. These updates also improve light mode compatibility across the editor UI.
+  ## New Scene editor 
 
-  ## Timeline and segment editing
-  Video segments now appear as frames in the main timeline and load faster, so you can review and adjust them more quickly. We also improved playhead behavior, zoom controls, and revision handling so it’s easier to track and restore changes while you work.
+  Open **Edit Sync and Pacing** on any narrated scene (from the sidebar or the timeline) to match your recording to the voiceover. The scene editor uses two timelines: your full source recording on top, and how that footage plays in the finished scene below. Drag across unused footage to add clips, trim segment edges, and set playback speed from very slow (0.5×) through ultra fast (8×) so long UI steps stay snappy without rushing important moments.
 
-  ## Voiceovers and audio
-  You can now delete event voiceovers, and add voiceovers for both freeze and play segments. We also improved the sound effect selector and background music controls, making it simpler to choose and manage audio for scenes and transitions.
+  Preview stays locked to your narration—the playhead follows the voiceover track, and a length bar shows how your clips line up with the script. For intro, outro, and pause scenes, pick the exact frame to hold while the voiceover plays. Changes save back to the timeline so exports reflect the pacing you set in the editor.
 
-  ## Translation, compatibility, and rendering
-  New scenes are translated more reliably, including card text, so localized recordings stay aligned as you edit. We also improved support for older recordings and tightened render behavior for transitions, title cards, logo reveals, and other scene animations to make exports more dependable.
+  ## **Title cards, logo reveals, and video scenes**
+
+  Add polished openings with the new title and intro card builder—stack text and images, pick backgrounds, and control entrance animations. Logo reveal scenes support your brand mark, company name styling, motion presets, and optional sound effects. Video scenes let you place uploaded footage on the timeline, trim source ranges in a refactored segment editor, and keep playback aligned with the rest of the recording.
+
+  ## **Scene transitions**
+
+  Transitions between scenes are fully redesigned: fade, slide, wipe, iris, zoom, dreamy zoom, film burn, blur, and layered styles like slide overlap and zoom cross/swap. Adjust duration, direction, easing, optional sound effects, and effect-specific controls (for example blur intensity or zoom overlap) from a dedicated transition editor with preview.
+
+  ## **Timeline editing**
+
+  The timeline is easier to scan and scrub: event segments show as a fast-loading filmstrip on the main track, the playhead follows playback more reliably, and the video-segment modal uses frame-based selection and a clearer layout. Context menus, scene coloring, and insert controls are tightened so common edits stay on the timeline.
+
+  ## **Voiceovers and segments**
+
+  Add voiceovers on freeze or play segments, delete event voiceovers from the timeline, and use an updated add-voiceover flow. Video segment editing includes revision history so you can recover earlier trims, plus UI fixes for freeze-frame preview and segment slicing.
+
+  ## **Translation, compatibility, and rendering**
+
+  New scenes translate more reliably, including card text, so localized recordings stay aligned as you edit. Older recordings remain supported (transitions apply on the new scene model where available). Export behavior is improved for transitions, title cards, logo reveals, and scene animations, with fixes for transition freezes, zoom layers, and background music during render.
+
+  ## **Other improvements**
+
+  UI polish across light mode, transition and scene side panels, sound-effect pickers, and timeline context menus. Under the hood, Remotion is updated and TTS can fall back when generation times out—mostly invisible, but exports and generation should feel more dependable.
 </Update>
+
 <Update label="10/20/2025">
-  ## Video cover 
+  ## Video cover
 
   Add a professional opening to your videos with a customizable cover. Include a title, short description, and image, with optional animation, to give your videos clear context before the main content starts.
 
