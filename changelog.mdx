@@ -4,6 +4,19 @@ description: "Track what is new, improved, and fixed in Clevera so you can quick
 ---
 
 <Update label="06/27/2026">
+    ## Upload videos now process correctly
+
+  We fixed a regression that could break the upload flow and stop uploaded videos from processing. Uploads now move through audio extraction, thumbnail generation, and readiness checks as expected, so your videos are much less likely to get stuck or fail midway.
+
+  ## Recording generation is more reliable
+
+  Recording jobs now run through the correct pipeline, which helps prevent recordings from hanging during creation. We also improved the processing status shown in the recording view, so it’s easier to tell when a recording is still working and when it’s ready.
+
+  ## Home page content stays scoped to your account
+
+  The home page now respects user scoping more reliably, so you’ll only see the recordings and content that belong to your account. This keeps the dashboard view accurate and avoids showing unrelated items.
+</Update>
+<Update label="06/27/2026">
   ## A simpler way to create content
 
   Recordings and finished work are now separate. Start from a screen recording, upload, or an existing source file, then choose what to make — demo, how-to, teaser, article, cleanup, or share-ready video. Raw source files stay behind the scenes; **Content** is where you edit, share, and publish.
