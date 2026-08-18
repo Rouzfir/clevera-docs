@@ -1,0 +1,65 @@
+---
+title: "Black bars around an embedded video"
+description: "Fix letterboxing in video-only embeds by matching the iframe to the recording’s aspect ratio."
+---
+
+The embed iframe is the right size, but the video sits in a smaller area with empty black space around it.
+
+This usually happens with a **video-only** embed. Video \+ article often looks fine because that iframe is taller.
+
+<Note>
+  Clevera does not crop or stretch the recording. The player keeps the video’s real shape so UI, captions, and title cards stay intact.
+</Note>
+
+## Why it happens
+
+The Share embed wrapper is **16:9** (`padding-top: 56.25%`). Many recordings are not — window captures are often **3:2** or **4:3**.
+
+A 3:2 video inside a 16:9 box cannot fill both width and height. The player fits the video without cutting it, so you get black bars on the sides (or top and bottom for a taller video).
+
+## Remove the leftover bars
+
+Change the **iframe box** to match the video. Do not crop or stretch.
+
+1. In Clevera, open the screencast and note the recording size (for example `1380×960` or `1440×960`).
+2. Copy **Share → Embed → Video only**.
+3. In the wrapper `div`, replace `padding-top: 56.25%` with the value for your ratio, **or** use `aspect-ratio` instead.
+
+**3:2 example** (`1440×960`, `1380×960`):
+
+```html
+<div style="position: relative; width: 100%; aspect-ratio: 3 / 2;">
+  <iframe
+    src="YOUR_EMBED_URL"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    allowfullscreen
+  ></iframe>
+</div>
+```
+
+Same result with the older padding trick: `padding-top: 66.67%`.
+
+### Common wrapper values
+
+| Recording | Ratio | `padding-top` | `aspect-ratio` |
+| --- | --- | --- | --- |
+| 1920×1080 | 16:9 | `56.25%` | `16 / 9` |
+| 1440×960, 1380×960 | ~3:2 | `66.67%` | `3 / 2` |
+| 1440×1080 | 4:3 | `75%` | `4 / 3` |
+| 1080×1920 (mobile) | 9:16 | `177.78%` | `9 / 16` |
+
+Formula if your size is not in the table: `(height ÷ width) × 100` = `padding-top`.
+
+<Tip>
+  WordPress, Help Scout, and similar hosts style the **outer** iframe only. They cannot restyle the player inside `share.clevera.ai`. Matching the wrapper to the video is the change that removes the bars.
+</Tip>
+
+## What not to do
+
+- Do not switch to a static MP4 just to control size. You lose LiveSync: the iframe updates when the Clevera video changes; an exported file does not.
+- Do not scale the video to “cover” the 16:9 box. That crops the top and bottom.
+- Do not stretch the video to 16:9. That distorts the picture.
+
+## Still seeing a large empty frame?
+
+If the video is small **on all four sides** (especially extra space below), that is not an aspect-ratio leftover. Confirm you are using a **video-only** embed (`type=video` or `mode=video-only`), then contact support — the player should fill the iframe, with bars only where the shapes still differ.

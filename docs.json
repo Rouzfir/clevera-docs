@@ -41,6 +41,12 @@
         "pages": [
           "changelog"
         ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "untitled-page"
+        ]
       }
     ]
   },
