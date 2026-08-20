@@ -37,15 +37,15 @@
         ]
       },
       {
-        "group": "Product updates",
-        "pages": [
-          "changelog"
-        ]
-      },
-      {
         "group": "Troubleshooting",
         "pages": [
           "Black-bars-around-embedded-video"
+        ]
+      },
+      {
+        "group": "Product updates",
+        "pages": [
+          "changelog"
         ]
       }
     ]
