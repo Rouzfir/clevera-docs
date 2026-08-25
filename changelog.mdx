@@ -3,6 +3,16 @@ title: "Changelog"
 description: "Track what is new, improved, and fixed in Clevera so you can quickly see how the product evolves over time and what has changed since your last visit. "
 ---
 
+<Update label="08/25/2026">
+    ## Read-only AI database access
+  You can now connect MCP-compatible AI tools to a dedicated read-only analytics schema in Clevera. Sensitive tables and columns are masked at the database layer, so AI assistants can query the data you want to share without exposing credentials or other private fields.
+
+  ## Smarter business-rule comparisons
+  Clevera now evaluates time-based logic in your app’s timezone, which keeps AI-generated answers aligned with how the product actually behaves. This is especially important for trial, billing, and access-related questions where a few hours of timezone drift can change the result.
+
+  ## Safer deploys for AI access
+  AI schema rebuilds now verify that masking is still enforced on every deploy. If database permissions drift and the read-only role can reach raw tables directly, the deploy fails loudly instead of silently weakening your data protection.
+</Update>
 <Update label="08/20/2026">
     ## More reliable exports with local media
 
