@@ -3,6 +3,16 @@ title: "Changelog"
 description: "Track what is new, improved, and fixed in Clevera so you can quickly see how the product evolves over time and what has changed since your last visit. "
 ---
 
+<Update label="08/25/2026">
+    ## Read-only AI database access
+  Clevera can now expose a secure, read-only SQL surface for MCP-compatible AI tools like Claude Desktop, Cursor, and Codex. The AI layer only sees approved tables and columns through masked database views, so sensitive credentials stay hidden while still letting you ask useful analytics questions.
+
+  ## Accurate billing and trial status
+  We fixed a timezone mismatch that could cause trial and access checks to disagree around the moment a trial ended. Billing logic now uses your app’s timezone consistently, so access reflects the same expiration timing you see in the product.
+
+  ## Better canvas rendering
+  We also improved browser rendering so layered elements are composited more reliably. This helps keep masks, highlights, text, images, and other scene elements in the right stacking order during playback and export.
+</Update>
 <Update label="08/20/2026">
     ## More reliable exports with local media
 
