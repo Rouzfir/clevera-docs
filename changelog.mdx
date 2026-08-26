@@ -3,6 +3,16 @@ title: "Changelog"
 description: "Track what is new, improved, and fixed in Clevera so you can quickly see how the product evolves over time and what has changed since your last visit. "
 ---
 
+<Update label="08/26/2026">
+    ## AI database access
+  Clevera’s read-only AI database access is now enforced through masked views, so approved AI clients can query your data without seeing sensitive tables or credentials. We also added automatic checks during rebuilds to make sure the masking layer stays intact, which helps catch privilege issues before they reach production.
+
+  ## More reliable exports and rendering
+  We fixed several rendering issues that could cause layers to stack incorrectly in the editor, especially around canvases, masks, and media elements. Exporting is also more resilient now, including better handling for on-device exports that can hang in some browsers and support for refreshing expired upload URLs.
+
+  ## Billing limits for yearly plans
+  Yearly plans now use the correct cap based on 12 times the monthly limit. This keeps usage restrictions consistent whether you bill monthly or annually.
+</Update>
 <Update label="08/20/2026">
     ## More reliable exports with local media
 
