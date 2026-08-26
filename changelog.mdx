@@ -3,6 +3,16 @@ title: "Changelog"
 description: "Track what is new, improved, and fixed in Clevera so you can quickly see how the product evolves over time and what has changed since your last visit. "
 ---
 
+<Update label="08/26/2026">
+    ## Read-only AI database access
+  Clevera now supports read-only database access for AI tools through masked views, so assistants like Claude Desktop and Cursor can query your data without seeing sensitive credentials or other restricted tables. This gives you safer analytics and documentation help while keeping access structurally limited at the database level.
+
+  ## Safer AI answers
+  Time-based AI queries now use the same timezone as your app, which keeps results aligned with what users actually see in Clevera. We also added a stronger permission check so masked data access fails loudly if it ever becomes unsafe, instead of silently exposing raw tables.
+
+  ## More reliable rendering and exports
+  We improved browser rendering and export stability, including fixes for layer stacking and better handling of on-device exports. Exports should now be more consistent across browsers, with fewer hangs and visual glitches in complex scenes.
+</Update>
 <Update label="08/20/2026">
     ## More reliable exports with local media
 
